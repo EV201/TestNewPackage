@@ -28,11 +28,11 @@ The fars functions show a summary of the accidents per month and year (fars_summ
 
 Example usage:
 summarizing accidents for a year:
-```{r summarize, echo = TRUE}
+``` r
 fars_summarize_years(2013)
 ```
 
 or plotting the accidents for a year on a state map:
-```{r mapping, echo = TRUE}
+``` r
 fars_map_state(1, 2015)
 ```
