@@ -1,0 +1,38 @@
+---
+title: "fars"
+output: rmarkdown::html_vignette
+date: "2020-09-23"
+vignette: >
+  %\VignetteIndexEntry{fars}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(TestNewPackage)
+```
+
+This is an example package for the accidents in the different states and years in the USA.
+
+The fars functions use the buildin databases: accident_2013.csv.bz2, accident_2014.csv.bz2, accident_2015.csv.bz2
+You can access these databases directly by system.file("extdata", filename, package = "TestNewPackage")
+
+The fars functions show a summary of the accidents per month and year (fars_summarize_years()) or the accidents for a year on a map for a state (fars_map_state()). Only the years 2013-2015 can be used.
+
+Example usage:
+summarizing accidents for a year:
+```{r summarize, echo = TRUE}
+fars_summarize_years(2013)
+```
+
+or plotting the accidents for a year on a state map:
+```{r mapping, echo = TRUE}
+fars_map_state(1, 2015)
+```
