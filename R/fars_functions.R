@@ -6,6 +6,7 @@
 #'
 #' @param filename character. The file name of the file to be loaded
 #'
+#'
 #' @return returns a tibble with the data
 #'
 #' @examples
@@ -53,6 +54,7 @@ make_filename <- function(year) {
 #'
 #' @param years a vector of integer or character
 #'
+#'
 #' @return NULL if there is an error
 #' @return a list with of tibbles each with 2 colums: MONTH and year
 #'
@@ -87,6 +89,7 @@ fars_read_years <- function(years) {
 #'
 #' @param years vector of int or character
 #'
+#'
 #' @return tbl_df with MONTH in the first column and # of accidents for each month in each year in the following columns.
 #'
 #' @examples
@@ -120,7 +123,6 @@ fars_summarize_years <- function(years) {
 #' invalid state number generates an invalid state number message (for example state.num = 3)
 #' no accidents generates a no accidents to plot message
 #'
-
 #'
 #' @examples
 #' \dontrun{

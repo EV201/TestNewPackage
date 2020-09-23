@@ -21,4 +21,10 @@ Suggests:
     rmarkdown
 VignetteBuilder: knitr
 Imports: 
-    dplyr
+    dplyr,
+    magrittr,
+    maps,
+    readr,
+    tidyr,
+    graphics,
+    tibble
