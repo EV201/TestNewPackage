@@ -4,8 +4,10 @@ Version: 0.0.0.9000
 Authors@R: 
     person(given = "Edward",
            family = "Visse",
-           role = "author",
+           role = c("aut","cre"),
            email = "edward.visse@med.lu.se")
+Author: Edward Visse
+Maintainer: Edward Visse <edward.visse@med.lu.se>
 Description: Example package. It creates summary statistics for accidents per year (for the years 2013-2015 only). 
     It can also display a map of accidents for a year in a certain state.
 License: `use_gpl3_license()`
