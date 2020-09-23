@@ -1,0 +1,57 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# TestNewPackage
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of TestNewPackage is to test R with Github for the an assignment in the 'building R packages' Coursera course.
+
+## Installation
+
+You can install the released version of TestNewPackage from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("TestNewPackage")
+```
+
+And the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("EV201/TestNewPackage")
+```
+
+## Accident statistics
+The fars functions use the buildin databases: accident_2013.csv.bz2, accident_2014.csv.bz2, accident_2015.csv.bz2
+You can access these databases directly by system.file("extdata", filename, package = "TestNewPackage")
+
+The fars functions show a summary of the accidents per month and year (fars_summarize_years()) or the accidents for a year on a map for a state (fars_map_state()). Only the years 2013-2015 can be used.
+
+## Examples
+```{r setup}
+library(TestNewPackage)
+```
+
+summarizing accidents for a year:
+```{r summarize, echo = TRUE}
+fars_summarize_years(2013)
+```
+
+or plotting the accidents for a year on a state map:
+```{r mapping, echo = TRUE}
+fars_map_state(1, 2015)
+```
