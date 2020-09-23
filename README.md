@@ -5,6 +5,8 @@
 
 <!-- badges: start -->
 
+[![Travis build
+status](https://travis-ci.com/EV201/TestNewPackage.svg?branch=master)](https://travis-ci.com/EV201/TestNewPackage)
 <!-- badges: end -->
 
 The goal of TestNewPackage is to test R with Github for the an
