@@ -15,12 +15,6 @@ returns a tbl_df with the data
 \description{
 This function checks if the file exists, stops with a message if it does not or loads the file if it does.
 }
-\note{
-conditions that may result in an error: if file does not exist -> "file does not exist" message
-Also generates a default Warning message because of a deprecated function:
-\code{tbl_df()} is deprecated as of dplyr 1.0.0.
-Please use \code{tibble::as_tibble()} instead.
-}
 \examples{
 \dontrun{
     fars_read(filename)

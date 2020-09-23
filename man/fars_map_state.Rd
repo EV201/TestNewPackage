@@ -12,7 +12,7 @@ fars_map_state(state.num, year)
 \item{year}{integer or character}
 }
 \value{
-The result of this function is a graph of a state map with accidents plotted in.
+The result of this function is a graph of a state map with accidents plotted in. It also returns 0 for testing
 }
 \description{
 This function plots a state map of the accidents in a certain year

@@ -8,12 +8,6 @@
 #'
 #' @return returns a tbl_df with the data
 #'
-#' @note conditions that may result in an error: if file does not exist -> "file does not exist" message
-#' Also generates a default Warning message because of a deprecated function:
-#'     `tbl_df()` is deprecated as of dplyr 1.0.0.
-#'     Please use `tibble::as_tibble()` instead.
-#'
-#'
 #' @examples
 #' \dontrun{
 #'     fars_read(filename)
@@ -26,7 +20,7 @@ fars_read <- function(filename) {
         data <- suppressMessages({
                 readr::read_csv(filename, progress = FALSE)
         })
-        dplyr::tbl_df(data)
+        tibble::as_tibble(data)
 }
 
 #' @title
@@ -124,7 +118,7 @@ fars_summarize_years <- function(years) {
 #' @param state.num integer or character. State by number
 #' @param year integer or character
 #'
-#' @return The result of this function is a graph of a state map with accidents plotted in.
+#' @return The result of this function is a graph of a state map with accidents plotted in. It also returns 0 for testing
 #'
 #' @note conditions that may result in an error: This function does not seem to work for state.num = 2: all regions out of bounds error
 #' invalid state number generates an invalid state number message (for example state.num = 3)
@@ -159,4 +153,5 @@ fars_map_state <- function(state.num, year) {
                           xlim = range(LONGITUD, na.rm = TRUE))
                 graphics::points(LONGITUD, LATITUDE, pch = 46)
         })
+        return(0)
 }
