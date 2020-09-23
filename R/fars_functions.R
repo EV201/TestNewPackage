@@ -58,8 +58,6 @@ make_filename <- function(year) {
 #'
 #' @note conditions that may result in an error: input of an invalid year returns a warning
 #'
-#' @importFrom magrittr %>%
-#'
 #' @examples
 #' \dontrun{
 #'     fars_read_years(c(2013, 2014))
@@ -90,8 +88,6 @@ fars_read_years <- function(years) {
 #' @param years vector of int or character
 #'
 #' @return tbl_df with MONTH in the first column and # of accidents for each month in each year in the following columns.
-#'
-#' @importFrom magrittr %>%
 #'
 #' @examples
 #' \dontrun{

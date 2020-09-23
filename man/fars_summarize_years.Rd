@@ -10,7 +10,7 @@ fars_summarize_years(years)
 \item{years}{vector of int or character}
 }
 \value{
-tbl_df with MONTH in the first column and # of accidents for each month in each year in the following columns
+tbl_df with MONTH in the first column and # of accidents for each month in each year in the following columns.
 }
 \description{
 This function reads the data for each year and summarizes it into month and year columns.
