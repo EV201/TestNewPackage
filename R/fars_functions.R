@@ -6,7 +6,7 @@
 #'
 #' @param filename character. The file name of the file to be loaded
 #'
-#' @return returns a tbl_df with the data
+#' @return returns a tibble with the data
 #'
 #' @examples
 #' \dontrun{
@@ -77,7 +77,7 @@ fars_read_years <- function(years) {
                         warning("invalid year: ", year)
                         return(NULL)
                 })
-        })
+        })[[1]]
 }
 
 

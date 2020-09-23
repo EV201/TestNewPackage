@@ -10,7 +10,7 @@ fars_read(filename)
 \item{filename}{character. The file name of the file to be loaded}
 }
 \value{
-returns a tbl_df with the data
+returns a tibble with the data
 }
 \description{
 This function checks if the file exists, stops with a message if it does not or loads the file if it does.
