@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     person(given = "Edward",
            family = "Visse",
-           role = "aut",
+           role = "author",
            email = "edward.visse@med.lu.se")
 Description: Example package. It creates summary statistics for accidents per year (for the years 2013-2015 only). 
     It can also display a map of accidents for a year in a certain state.
