@@ -77,7 +77,7 @@ fars_read_years <- function(years) {
                         warning("invalid year: ", year)
                         return(NULL)
                 })
-        })[[1]]
+        })
 }
 
 
